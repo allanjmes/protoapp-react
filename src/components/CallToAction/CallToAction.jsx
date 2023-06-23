@@ -1,5 +1,5 @@
-import LaravelBadge from "../../assets/svg component/LaravelBadge";
-import EyeglassBadge from "../../assets/svg component/EyeglassBadge";
+import LaravelBadge from "../../assets/svg-component/LaravelBadge";
+import EyeglassBadge from "../../assets/svg-component/EyeglassBadge";
 
 const CallToAction = () => {
     return (

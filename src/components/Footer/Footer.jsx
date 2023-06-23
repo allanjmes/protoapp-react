@@ -1,5 +1,3 @@
-import Logo from "../../assets/svg component/Logo";
-
 const Footer = () => {
     return (
         <div className="footer">

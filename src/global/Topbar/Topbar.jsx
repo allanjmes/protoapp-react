@@ -1,4 +1,4 @@
-import Logo from "../../assets/svg component/Logo";
+import Logo from "../../assets/svg-component/Logo";
 
 const Topbar = () => {
     return (
