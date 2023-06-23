@@ -1,0 +1,200 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+.hero {
+    position: relative;
+
+    #{&}__description {
+        width: 50%;
+        padding-top: 4rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        span {
+            font-size: fontSize(medium--l);
+        }
+
+        p {
+            font-size: fontSize(small--s);
+        }
+
+        .cta-btn {
+            @include flexCenter(row);
+            background-color: var(--accent-color);
+            width: 4rem;
+            height: 1.5rem;
+            border-radius: 0.3rem;
+            color: var(--text-color--white);
+            font-weight: weights(regular);
+            font-size: fontSize(small--xs);
+
+        }
+
+        .cta-btn:hover {
+            cursor: pointer;
+        }
+    }
+
+    #{&}__download-btn {
+        padding-bottom: 2rem;
+        @include flexCenter(row);
+        gap: 1rem;
+        
+        // LOGO / SVG modified in svg component Hero.jsx
+        // img {
+        //     width: 6.5rem;
+        //     height: 2rem;
+        // }
+    }
+
+    #{&}__btm-description {
+        padding-bottom: 2.5rem;
+        // padding-bottom: 5rem; large
+        @include flexCenter(column);
+        
+
+        span {
+            font-weight: weights(bold);
+            font-size: fontSize(medium--m);
+        }
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            font-weight: weights(light);
+            font-size: fontSize(small--m);
+        }
+    }
+
+
+
+    #{&}__bg-leaves {
+        position: absolute;
+        z-index: -999;
+
+        svg {
+            position: absolute;
+        }
+    }
+
+    // #{&}__bg-decals-2 {
+    //     width: 100%;
+    //     height: auto;
+    //     position: absolute;
+    //     top: 11rem;
+    //     left: -1.5rem;
+    //     z-index: -999;
+    // }
+}
+
+.bg-leaves {
+    position: absolute;
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+    .hero {
+        #{&}__description {
+            padding-left: 3rem;
+            padding-top: 7rem;
+            padding-bottom: 6rem;
+            row-gap: 1rem;
+    
+            span {
+                font-size: fontSize(large--l);
+            }
+    
+            p {
+                font-size: fontSize(medium--s);
+            }
+    
+            .cta-btn {
+                width: 8rem;
+                height: 3rem;
+                border-radius: 0.4rem;
+                font-size: fontSize(medium--xs);
+            }
+        }
+
+        #{&}__download-btn {
+            padding-bottom: 4rem;
+            gap: 2rem;
+    
+            img {
+                // width: 13.5rem;
+                // height: 4rem;
+                width: 10rem;
+                height: 3rem;
+            }
+        }
+
+        #{&}__btm-description {
+            padding-bottom: 5rem;
+    
+            span {
+                font-size: fontSize(large--m);
+            }
+    
+            p {
+                width: 80%;
+                font-size: fontSize(medium--m);
+            }
+        }
+
+        #{&}__bg-decals-2 {
+            top: 20rem;
+            left: -3rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        #{&}__description {
+            padding-left: 12rem;
+            padding-top: 10rem;
+            padding-bottom: 12rem;
+            width: 45%;
+            row-gap: 1rem;
+    
+            .cta-btn {
+                width: 8rem;
+                height: 3rem;
+                border-radius: 0.5rem;
+                font-size: fontSize(medium--xs);
+            }
+        }
+
+        #{&}__download-btn {
+            padding-bottom: 8rem;
+            gap: 2rem;
+    
+            img {
+                width: 13.5rem;
+                height: 4rem;
+            }
+        }
+
+        #{&}__btm-description {
+            padding-bottom: 10rem;
+    
+            span {
+                font-size: fontSize(large--m);
+            }
+    
+            p {
+                width: 60%;
+                font-size: fontSize(medium--m);
+            }
+        }
+    }
+}

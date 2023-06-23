@@ -1,0 +1,222 @@
+.call-to-action {
+  padding-top: 1.5rem;
+  padding-bottom: 6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.call-to-action .call-to-action__title {
+  font-weight: weights(bold);
+  font-size: fontSize(medium--m);
+}
+.call-to-action .call-to-action__description {
+  font-size: fontSize(small--s);
+}
+.call-to-action .call-to-action__btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+  color: var(--text-color--white);
+}
+.call-to-action .call-to-action__btn .automation {
+  background-color: var(--bg-color--yellow);
+  height: 13rem;
+  width: 22rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.call-to-action .call-to-action__btn .automation:hover {
+  cursor: pointer;
+}
+.call-to-action .call-to-action__btn .automation .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  gap: 1rem;
+}
+.call-to-action .call-to-action__btn .automation .logo .sub-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 6rem;
+  height: 1.5rem;
+  border-radius: 10rem;
+  font-weight: weights(bold);
+  font-size: fontSize(small--s);
+}
+.call-to-action .call-to-action__btn .automation .logo .sub-title span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call-to-action .call-to-action__btn .automation .description {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.call-to-action .call-to-action__btn .automation .description .short-description {
+  font-weight: weights(medium);
+  font-size: fontSize(small--s);
+}
+.call-to-action .call-to-action__btn .automation .description .title {
+  font-weight: weights(bold);
+  font-size: fontSize(medium--xs);
+  width: 80%;
+}
+.call-to-action .call-to-action__btn .automation .description .long-description {
+  padding-top: 1rem;
+  font-size: fontSize(small--xs);
+}
+.call-to-action .call-to-action__btn .simplicity {
+  background-color: var(--bg-color--green);
+  height: 13rem;
+  width: 22rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.call-to-action .call-to-action__btn .simplicity:hover {
+  cursor: pointer;
+}
+.call-to-action .call-to-action__btn .simplicity .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  gap: 1rem;
+}
+.call-to-action .call-to-action__btn .simplicity .logo .sub-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 6rem;
+  height: 1.5rem;
+  border-radius: 10rem;
+  font-weight: weights(bold);
+  font-size: fontSize(small--s);
+}
+.call-to-action .call-to-action__btn .simplicity .logo .sub-title span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call-to-action .call-to-action__btn .simplicity .description {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.call-to-action .call-to-action__btn .simplicity .description .short-description {
+  font-weight: weights(medium);
+  font-size: fontSize(small--s);
+}
+.call-to-action .call-to-action__btn .simplicity .description .title {
+  font-weight: weights(bold);
+  font-size: fontSize(medium--xs);
+  width: 80%;
+}
+.call-to-action .call-to-action__btn .simplicity .description .long-description {
+  padding-top: 1rem;
+  font-size: fontSize(small--xs);
+}
+.call-to-action .call-to-action__bg-decals-4 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: -999;
+}
+
+@media (min-width: 768px) {
+  .call-to-action {
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+  }
+  .call-to-action .call-to-action__title {
+    font-size: fontSize(large--m);
+  }
+  .call-to-action .call-to-action__description {
+    font-size: fontSize(medium--s);
+  }
+  .call-to-action .call-to-action__btn {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+  }
+  .call-to-action .call-to-action__btn .automation {
+    height: 17rem;
+    width: 29rem;
+    border-radius: 1rem;
+    gap: 1rem;
+  }
+  .call-to-action .call-to-action__btn .automation .logo {
+    padding: 2rem 0 2rem 2rem;
+    gap: 2rem;
+  }
+  .call-to-action .call-to-action__btn .automation .logo .sub-title {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10rem;
+    font-size: fontSize(medium--s);
+  }
+  .call-to-action .call-to-action__btn .automation .logo .sub-title span {
+    height: 100%;
+  }
+  .call-to-action .call-to-action__btn .automation .description {
+    padding: 1.5rem;
+  }
+  .call-to-action .call-to-action__btn .automation .description .short-description {
+    font-size: fontSize(medium--xs);
+  }
+  .call-to-action .call-to-action__btn .automation .description .title {
+    font-size: fontSize(large--xs);
+  }
+  .call-to-action .call-to-action__btn .automation .description .long-description {
+    padding-top: 1rem;
+    font-size: fontSize(small--m);
+  }
+  .call-to-action .call-to-action__btn .simplicity {
+    height: 17rem;
+    width: 29rem;
+    border-radius: 1rem;
+    gap: 1rem;
+  }
+  .call-to-action .call-to-action__btn .simplicity .logo {
+    padding: 2rem 0 2rem 2rem;
+    gap: 2rem;
+  }
+  .call-to-action .call-to-action__btn .simplicity .logo .sub-title {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10rem;
+    font-size: fontSize(medium--s);
+  }
+  .call-to-action .call-to-action__btn .simplicity .logo .sub-title span {
+    height: 100%;
+  }
+  .call-to-action .call-to-action__btn .simplicity .description {
+    padding: 1.5rem;
+  }
+  .call-to-action .call-to-action__btn .simplicity .description .short-description {
+    font-size: fontSize(medium--xs);
+  }
+  .call-to-action .call-to-action__btn .simplicity .description .title {
+    font-size: fontSize(large--xs);
+  }
+  .call-to-action .call-to-action__btn .simplicity .description .long-description {
+    padding-top: 1rem;
+    font-size: fontSize(small--m);
+  }
+}
+@media (min-width: 1440px) {
+  .call-to-action .call-to-action__btn {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}/*# sourceMappingURL=CallToAction.css.map */

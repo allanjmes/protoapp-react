@@ -1,0 +1,79 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+.header {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 3rem;
+    margin: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
+
+    // LOGO / SVG size is modified through the react component Logo.jsx
+    // #{&}__logo {
+    //     height: 2rem;
+    //     width: 2rem;
+    // }
+
+    #{&}__title {
+        font-weight: weight(regular);
+        font-size: fontSize(medium--s);
+    }
+
+    #{&}__btn {
+        font-weight: weight(regular);
+        font-size: fontSize(small--s);
+        padding-top: 0.5rem;
+
+        list-style: none;
+    }
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+    .header {
+        height: 4rem;
+    }
+
+    .navbar {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        padding-left: 0;
+        gap: 1rem;
+    
+        #{&}__logo {
+            height: 3rem;
+            width: 3rem;
+        }
+    
+        #{&}__logo-title {
+            font-size: fontSize(large--s);
+        }
+    
+        #{&}__navigation-btn {
+            font-size: fontSize(medium--s);
+    
+            list-style: none;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar {
+        width: 80%;
+    }
+}

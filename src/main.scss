@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+// VARIABLES
+:root {
+    --primary-color: #ffffff;
+    --accent-color: #2248e2;
+    --text-color--white: #ffffff;
+    --text-color--black: #000000;
+    --bg-color--yellow: #ffc107;
+    --bg-color--green: #17a2b8;
+    --bg-color--grey: #343a40;
+}
+
+// RESETS
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--primary-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app {
+    position: relative;
+}
+
+// FONTS
+$font-weights: (
+    "thin": 200,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700
+);
+
+$font-sizes: (
+    "xsmall--s": 7px,
+    "xsmall--m": 9px,
+    "small--xs": 10px,
+    "small--s": 12px,
+    "small--m": 15px,
+    "small--l": 17px,
+    "medium--xs": 19px,
+    "medium--s": 20px,
+    "medium--m": 22px,
+    "medium--l": 25px,
+    "large--xs": 30px,
+    "large--s": 40px,
+    "large--m": 50px,
+    "large--l": 60px
+);
+
+// FUNCTIONS
+@function weights($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+@function fontSize($font-size) {
+    @return map-get($font-sizes, $font-size);
+}
+
+@import './global/Topbar/Topbar.scss';
+@import './components/Hero/Hero.scss';
+@import './components/Products/Products.scss';
+@import './components/Download/Download.scss';
+@import './components/CallToAction/CallToAction.scss';
+@import './components/Footer/Footer.scss';

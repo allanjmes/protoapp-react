@@ -1,0 +1,148 @@
+.hero {
+  position: relative;
+}
+.hero .hero__description {
+  width: 50%;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.hero .hero__description span {
+  font-size: fontSize(medium--l);
+}
+.hero .hero__description p {
+  font-size: fontSize(small--s);
+}
+.hero .hero__description .cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: var(--accent-color);
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  color: var(--text-color--white);
+  font-weight: weights(regular);
+  font-size: fontSize(small--xs);
+}
+.hero .hero__description .cta-btn:hover {
+  cursor: pointer;
+}
+.hero .hero__download-btn {
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.hero .hero__btm-description {
+  padding-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero .hero__btm-description span {
+  font-weight: weights(bold);
+  font-size: fontSize(medium--m);
+}
+.hero .hero__btm-description p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: weights(light);
+  font-size: fontSize(small--m);
+}
+.hero .hero__bg-leaves {
+  position: absolute;
+  z-index: -999;
+}
+.hero .hero__bg-leaves svg {
+  position: absolute;
+}
+
+.bg-leaves {
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .hero .hero__description {
+    padding-left: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    row-gap: 1rem;
+  }
+  .hero .hero__description span {
+    font-size: fontSize(large--l);
+  }
+  .hero .hero__description p {
+    font-size: fontSize(medium--s);
+  }
+  .hero .hero__description .cta-btn {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.4rem;
+    font-size: fontSize(medium--xs);
+  }
+  .hero .hero__download-btn {
+    padding-bottom: 4rem;
+    gap: 2rem;
+  }
+  .hero .hero__download-btn img {
+    width: 10rem;
+    height: 3rem;
+  }
+  .hero .hero__btm-description {
+    padding-bottom: 5rem;
+  }
+  .hero .hero__btm-description span {
+    font-size: fontSize(large--m);
+  }
+  .hero .hero__btm-description p {
+    width: 80%;
+    font-size: fontSize(medium--m);
+  }
+  .hero .hero__bg-decals-2 {
+    top: 20rem;
+    left: -3rem;
+  }
+}
+@media (min-width: 1440px) {
+  .hero .hero__description {
+    padding-left: 12rem;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+    width: 45%;
+    row-gap: 1rem;
+  }
+  .hero .hero__description .cta-btn {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: fontSize(medium--xs);
+  }
+  .hero .hero__download-btn {
+    padding-bottom: 8rem;
+    gap: 2rem;
+  }
+  .hero .hero__download-btn img {
+    width: 13.5rem;
+    height: 4rem;
+  }
+  .hero .hero__btm-description {
+    padding-bottom: 10rem;
+  }
+  .hero .hero__btm-description span {
+    font-size: fontSize(large--m);
+  }
+  .hero .hero__btm-description p {
+    width: 60%;
+    font-size: fontSize(medium--m);
+  }
+}/*# sourceMappingURL=Hero.css.map */

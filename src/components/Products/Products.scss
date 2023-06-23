@@ -1,0 +1,124 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+.products {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 70%;
+    margin: 0 auto;
+    @include flexCenter(column);
+    gap: 3.5rem;
+
+    li {
+        list-style: none;
+    }
+
+    span {
+        font-weight: weights(bold);
+        font-size: fontSize(medium--s);
+    }
+
+    p {
+        font-size: fontSize(small--s);
+        padding-top: 0.5rem;
+    }
+
+    img {
+        width: 9rem;
+        height: 8.5rem;
+    }
+
+    #{&}__discover {
+        display: flex;
+        text-align: right;
+        gap: 0.5rem;
+    }
+
+    #{&}__augmented {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        gap: 0.5rem;
+    }
+
+    #{&}__possibilities {
+        display: flex;
+        text-align: right;
+        gap: 0.5rem;
+    }
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+    .products {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 60%;
+        gap: 7rem;
+    
+        span {
+            font-size: fontSize(large--s);
+        }
+    
+        p {
+            font-size: fontSize(medium--s);
+            padding-top: 1rem;
+        }
+    
+        img {
+            width: 15rem;
+            height: 14rem;
+        }
+    
+        #{&}__discover {
+            gap: 1rem;
+        }
+    
+        #{&}__augmented {
+            gap: 1rem;
+        }
+    
+        #{&}__possibilities {
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .products {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        width: 45%;
+        gap: 10rem;
+    
+        span {
+            font-size: fontSize(large--s);
+        }
+    
+        p {
+            font-size: fontSize(medium--s);
+            padding-top: 1rem;
+        }
+    
+        img {
+            width: 18rem;
+            height: 17rem;
+        }
+    
+        #{&}__discover {
+            gap: 1rem;
+        }
+    
+        #{&}__augmented {
+            gap: 1rem;
+        }
+    
+        #{&}__possibilities {
+            gap: 1rem;
+        }
+    }
+}
